@@ -12,9 +12,9 @@ CI= 'true'
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',		    
+                git branch: 'master',		    
 		credentialsId: 'bb059738-bc0c-439c-af36-4c5aeeb1128e',
-			url: "https://github.com/AnkitMeshram23/nodejs1.git"    
+			url: 'https://github.com/AnkitMeshram23/nodejs1.git'    
 	    }
 	}	
         stage('Building') {
