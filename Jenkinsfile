@@ -19,7 +19,7 @@ CI= 'true'
 	}	
         stage('Building') {
             steps {
-                sh 'mvn clean install'
+                sh 'npm clean install'
             }
         }		    
 	    
