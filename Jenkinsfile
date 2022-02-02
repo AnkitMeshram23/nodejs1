@@ -46,12 +46,12 @@ sh '''$SCANNER_HOME/bin/sonar-scanner \
           }
 	    stage('Package') {
             steps {
-                sh 'mvn package'
+                sh 'npm package'
             }
         }
 	stage('Deploy') {
             steps {
-		    sh 'cp /root/.jenkins/workspace/Sonar-test/target/*.war /opt/tomcat/webapps/'
+		    sh 'cp /root/.jenkins/workspace/Nodejs/target/*.war /opt/tomcat/webapps/'
             }
         }
   }
