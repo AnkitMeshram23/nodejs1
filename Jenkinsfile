@@ -26,7 +26,7 @@ CI= 'true'
         stage('Sonar Analysis') {
 environment {
 SCANNER_HOME = tool 'Anksonar'
-PROJECT_NAME = "test"
+PROJECT_NAME = "node"
 }
 steps {
 withSonarQubeEnv('Anksonar') {
