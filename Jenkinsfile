@@ -46,7 +46,7 @@ sh '''$SCANNER_HOME/bin/sonar-scanner \
           }
 	    stage('Package') {
             steps {
-                sh 'npm package'
+                sh 'npm build'
             }
         }
 	stage('Deploy') {
