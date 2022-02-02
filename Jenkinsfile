@@ -51,7 +51,7 @@ sh '''$SCANNER_HOME/bin/sonar-scanner \
         }
 	stage('Deploy') {
             steps {
-		    sh 'cp /root/.jenkins/workspace/Nodejs/target/*.war /opt/tomcat/webapps/'
+		    sh 'npm start'
             }
         }
   }
