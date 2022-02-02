@@ -44,9 +44,15 @@ sh '''$SCANNER_HOME/bin/sonar-scanner \
               }
             }
           }
+	    
+	     stage('Testnode') {
+            steps {
+                sh 'npm test'
+            }
+        }
 	    stage('Package') {
             steps {
-                sh 'npm build'
+                sh 'npm run build'
             }
         }
 	stage('Deploy') {
