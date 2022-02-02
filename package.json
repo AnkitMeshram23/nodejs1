@@ -8,7 +8,7 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
-    "start": "react-scripts start --host 0.0.0.0 --port 80",
+    "start": "react-scripts start --host 3.110.219.51 --port 80",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
